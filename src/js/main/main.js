@@ -12,13 +12,19 @@ let aka08 = {
         // GLOBAL VARIABLES --------------------
         context.config = {
             // let
-            playerArray: document.getElementsByTagName('body')
+            currentYear: new Date().getFullYear(),
+            currentYearHolder: document.getElementById("footerYear")
         };
 
         // CALL DOM INVOKING FUNCTIONS HERE --------------------
+        aka08.footerYear();
         aka08.eventHandlers();
         console.log(aka08.config);
 
+    },
+
+    footerYear: () => {
+        aka08.config.currentYearHolder.innerHTML = aka08.config.currentYear;
     },
 
     // -------------------- HANDLE ALL PAGE LEVEL EVENTS --------------------
