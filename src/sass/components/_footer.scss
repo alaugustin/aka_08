@@ -1,20 +1,21 @@
 .footer {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  background: red;
+  //   padding-top: 16px;
+  //   padding-bottom: 16px;
 
-  .legal {
-    font-size: 75%;
-  }
+  //   .legal {
+  //     font-size: 75%;
+  //   }
 
-  &--social {
-    display: flex;
+  //   &--social {
+  //     display: flex;
 
-    li {
-      margin-right: 12px;
+  //     li {
+  //       margin-right: 12px;
 
-      &:last-of-type {
-        margin-right: 0;
-      }
-    }
-  }
+  //       &:last-of-type {
+  //         margin-right: 0;
+  //       }
+  //     }
+  //   }
 }
