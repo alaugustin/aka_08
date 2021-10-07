@@ -3,6 +3,7 @@
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
+  color: $main-black;
 }
 
 h1,
@@ -28,6 +29,7 @@ h3 {
 
 p {
   margin-bottom: 8px;
+  line-height: 140%;
 
   &:last-of-type {
     margin-bottom: 0;
