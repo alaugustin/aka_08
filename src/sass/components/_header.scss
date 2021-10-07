@@ -3,20 +3,8 @@
   //   padding-top: 36px;
   //   padding-bottom: 10px;
 
-  &--nav {
-    &--list {
-      background: red;
-      margin-top: 16px;
-      margin-bottom: 24px;
-    }
-  }
-
-  &--navigation {
-    // background: red;
-  }
-  &--social {
-    // background: yellow;
-    font-size: 64px;
+  &--logo {
+    object-fit: none;
   }
 
   &--navigation,
@@ -25,5 +13,111 @@
     justify-content: space-between;
     padding-top: 8px;
     padding-bottom: 8px;
+  }
+
+  &--navigation {
+    @media screen and (min-width: $bp-540) {
+      justify-content: flex-start;
+
+      li {
+        margin-right: 32px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+
+    @media screen and (min-width: $bp-540) {
+      justify-content: flex-end;
+    }
+  }
+
+  &--social {
+    @media screen {
+      @media (min-width: $bp-540) {
+        padding: 0;
+      }
+      @media (min-width: $bp-768) {
+        flex-grow: 1;
+      }
+
+      @media (min-width: $bp-854) {
+        justify-content: flex-end;
+
+        > li {
+          margin-right: 28px;
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &--nav {
+    @media screen {
+      @media (max-width: ($bp-540)-1) {
+        justify-content: space-between;
+      }
+
+      @media (min-width: $bp-854) {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 32px;
+      }
+    }
+
+    &--list {
+      // background: red;
+      margin-top: 16px;
+      margin-bottom: 24px;
+
+      @media screen {
+        @media (max-width: ($bp-540)-1) {
+          margin-bottom: 24px;
+        }
+
+        @media (min-width: $bp-540) {
+          margin: 0;
+          margin-left: 32px;
+          flex-grow: 1;
+        }
+        @media (min-width: $bp-768) {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row-reverse;
+        }
+      }
+
+      &--social,
+      &--navigation {
+        @media screen and (min-width: $bp-768) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      &--social {
+        @media screen and (min-width: $bp-768) {
+          flex-grow: 1;
+          margin-right: 32px;
+        }
+      }
+    }
+  }
+
+  &--content {
+    // background: red;
+  }
+
+  &--headshot {
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 275px;
+    display: block;
   }
 }
