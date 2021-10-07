@@ -2,4 +2,28 @@
   background: green;
   //   padding-top: 36px;
   //   padding-bottom: 10px;
+
+  &--nav {
+    &--list {
+      background: red;
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &--navigation {
+    // background: red;
+  }
+  &--social {
+    // background: yellow;
+    font-size: 64px;
+  }
+
+  &--navigation,
+  &--social {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 }
