@@ -84,7 +84,7 @@
           margin-left: 32px;
           flex-grow: 1;
         }
-        @media (min-width: $bp-768) {
+        @media (min-width: $bp-854) {
           display: flex;
           justify-content: space-between;
           flex-direction: row-reverse;
@@ -93,7 +93,7 @@
 
       &--social,
       &--navigation {
-        @media screen and (min-width: $bp-768) {
+        @media screen and (min-width: $bp-854) {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -101,7 +101,7 @@
       }
 
       &--social {
-        @media screen and (min-width: $bp-768) {
+        @media screen and (min-width: $bp-854) {
           flex-grow: 1;
           margin-right: 32px;
         }
