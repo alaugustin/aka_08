@@ -1,7 +1,15 @@
 @import "components/reset";
+@import "components/screen_reader";
+@import "components/columns";
 @import "components/base";
+@import "components/fonts";
 @import "components/header";
-.main {
-  background: green;
-}
+@import "components/main";
 @import "components/footer";
+
+.header,
+.main,
+.footer {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
