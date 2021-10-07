@@ -6,3 +6,10 @@
 @import "components/header";
 @import "components/main";
 @import "components/footer";
+
+.header,
+.main,
+.footer {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
