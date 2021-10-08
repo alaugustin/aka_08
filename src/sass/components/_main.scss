@@ -1,9 +1,18 @@
 .main {
-  background: yellow;
+  // background: yellow;
 
   > section {
     margin-bottom: 32px;
   }
+
+  &--about {
+    background: yellow;
+  }
+
+  &--gallery {
+    background: yellow;
+  }
+
   &--represent {
     &--agent {
       font-size: 24px;
