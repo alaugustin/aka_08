@@ -1,12 +1,17 @@
 .main {
-  //
-
   > section {
     margin-bottom: 32px;
   }
 
   &--about {
     background: yellow;
+
+    &--content {
+      // background: red;
+      @media screen and (min-width: $bp-854) {
+        font-size: 22px;
+      }
+    }
   }
 
   &--gallery {
