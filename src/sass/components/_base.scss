@@ -9,6 +9,14 @@ body {
   height: 100vh;
 }
 
+img {
+  width: 100%;
+
+  @media screen and (min-width: $bp-375) {
+    width: auto;
+  }
+}
+
 .container-fluid {
   margin: 0 auto 16px;
   max-width: 1100px;
