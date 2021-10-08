@@ -1,21 +1,19 @@
 .footer {
-  background: red;
-  //   padding-top: 16px;
-  //   padding-bottom: 16px;
+  .legal {
+    font-size: 75%;
+    margin-top: 16px;
+  }
 
-  //   .legal {
-  //     font-size: 75%;
-  //   }
+  &--social {
+    display: flex;
+    justify-content: space-between;
 
-  //   &--social {
-  //     display: flex;
-
-  //     li {
-  //       margin-right: 12px;
-
-  //       &:last-of-type {
-  //         margin-right: 0;
-  //       }
-  //     }
-  //   }
+    &--link {
+      @media screen and (min-width: $bp-768) {
+        &.social--link {
+          font-size: 64px;
+        }
+      }
+    }
+  }
 }

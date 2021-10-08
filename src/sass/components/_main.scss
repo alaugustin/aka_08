@@ -1,6 +1,7 @@
 .main {
   background: yellow;
-  //   flex: auto;
-  //   padding-top: 8px;
-  //   padding-bottom: 8px;
+
+  > section {
+    margin-bottom: 32px;
+  }
 }

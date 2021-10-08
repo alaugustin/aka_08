@@ -6,7 +6,6 @@
   margin: -1px;
   overflow: hidden;
   border: 0;
-  //   color: #fff;
 }
 .sr-only {
   @extend .sr-only-mobile;
@@ -27,7 +26,6 @@ a.skip-link.sr-only:focus {
   text-decoration: none;
   font-weight: 700;
   font-size: 14px;
-  margin-bottom: 20px;
 }
 a.skip-link.sr-only-mobile:focus {
   position: absolute;

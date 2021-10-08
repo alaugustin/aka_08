@@ -1,7 +1,26 @@
-// .aka-2-col {
-//   display: flex;
+.aka-2-col {
+  display: flex;
+  flex-direction: column-reverse;
 
-//   .column {
-//     width: 50%;
-//   }
-// }
+  @media screen and (min-width: $bp-768) {
+    flex-direction: row;
+  }
+
+  .column {
+    width: 100%;
+
+    @media screen and (min-width: $bp-768) {
+      width: 50%;
+    }
+  }
+
+  &__image-offset {
+    .column {
+      &:last-of-type {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

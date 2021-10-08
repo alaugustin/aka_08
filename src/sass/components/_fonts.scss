@@ -3,6 +3,7 @@
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
+  color: $main-black;
 }
 
 h1,
@@ -18,6 +19,7 @@ h6 {
 
 h1 {
   font-size: 48px;
+  margin-bottom: 16px;
 }
 h2 {
   font-size: 32px;
@@ -28,8 +30,27 @@ h3 {
 
 p {
   margin-bottom: 8px;
+  line-height: 140%;
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+}
+
+.social--link {
+  font-size: 48px;
+  color: $main-black;
+
+  @media screen {
+    @media (min-width: $bp-375) {
+      font-size: 64px;
+    }
+
+    @media (min-width: $bp-640) {
+      font-size: 32px;
+    }
+    @media (min-width: $bp-768) {
+      font-size: 24px;
+    }
   }
 }
