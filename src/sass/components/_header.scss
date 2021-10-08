@@ -1,8 +1,4 @@
 .header {
-  background: green;
-  //   padding-top: 36px;
-  //   padding-bottom: 10px;
-
   &--logo {
     object-fit: none;
   }
@@ -16,8 +12,13 @@
   }
 
   &--navigation {
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-320) {
+      flex-direction: row;
+    }
     @media screen and (min-width: $bp-540) {
-      justify-content: flex-start;
+      justify-content: flex-end;
 
       li {
         margin-right: 32px;
@@ -27,10 +28,6 @@
         }
       }
     }
-
-    @media screen and (min-width: $bp-540) {
-      justify-content: flex-end;
-    }
   }
 
   &--social {
@@ -38,11 +35,8 @@
       @media (min-width: $bp-540) {
         padding: 0;
       }
-      @media (min-width: $bp-768) {
-        flex-grow: 1;
-      }
 
-      @media (min-width: $bp-854) {
+      @media (min-width: $bp-768) {
         justify-content: flex-end;
 
         > li {
@@ -53,6 +47,10 @@
           }
         }
       }
+
+      @media (min-width: $bp-768) {
+        flex-grow: 1;
+      }
     }
   }
 
@@ -62,29 +60,29 @@
         justify-content: space-between;
       }
 
-      @media (min-width: $bp-854) {
+      @media (min-width: $bp-640) {
         display: flex;
+        margin-bottom: 32px;
+      }
+
+      @media (min-width: $bp-768) {
         justify-content: flex-start;
         margin-bottom: 32px;
       }
     }
 
     &--list {
-      // background: red;
       margin-top: 16px;
-      margin-bottom: 24px;
+      margin-bottom: 32px;
 
       @media screen {
-        @media (max-width: ($bp-540)-1) {
-          margin-bottom: 24px;
-        }
-
-        @media (min-width: $bp-540) {
+        @media (min-width: $bp-640) {
+          flex-grow: 1;
           margin: 0;
           margin-left: 32px;
-          flex-grow: 1;
         }
-        @media (min-width: $bp-854) {
+
+        @media (min-width: $bp-768) {
           display: flex;
           justify-content: space-between;
           flex-direction: row-reverse;
@@ -93,7 +91,7 @@
 
       &--social,
       &--navigation {
-        @media screen and (min-width: $bp-854) {
+        @media screen and (min-width: $bp-768) {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -101,7 +99,7 @@
       }
 
       &--social {
-        @media screen and (min-width: $bp-854) {
+        @media screen and (min-width: $bp-768) {
           flex-grow: 1;
           margin-right: 32px;
         }
@@ -110,14 +108,18 @@
   }
 
   &--content {
-    // background: red;
+    background: green;
   }
 
   &--headshot {
     margin-bottom: 16px;
     margin-left: auto;
     margin-right: auto;
-    width: 275px;
+    width: 100%;
     display: block;
+
+    @media screen and (min-width: $bp-375) {
+      width: 275px;
+    }
   }
 }

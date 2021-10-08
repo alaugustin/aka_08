@@ -46,11 +46,10 @@ p {
       font-size: 64px;
     }
 
-    // @media (min-width: $bp-768) {
-    //   font-size: 32px;
-    // }
-
-    @media (min-width: $bp-854) {
+    @media (min-width: $bp-640) {
+      font-size: 32px;
+    }
+    @media (min-width: $bp-768) {
       font-size: 24px;
     }
   }
