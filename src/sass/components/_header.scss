@@ -108,7 +108,11 @@
   }
 
   &--content {
-    background: green;
+    // background: green;
+
+    &--intro-copy {
+      font-size: 22px;
+    }
   }
 
   &--headshot {
@@ -117,6 +121,7 @@
     margin-right: auto;
     width: 100%;
     display: block;
+    border-radius: 50%;
 
     @media screen and (min-width: $bp-375) {
       width: 275px;

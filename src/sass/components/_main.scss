@@ -1,3 +1,7 @@
 .main {
   background: yellow;
+
+  > section {
+    margin-bottom: 32px;
+  }
 }

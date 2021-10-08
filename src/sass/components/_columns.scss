@@ -13,4 +13,14 @@
       width: 50%;
     }
   }
+
+  &__image-offset {
+    .column {
+      &:last-of-type {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
 }
