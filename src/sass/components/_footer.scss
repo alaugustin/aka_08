@@ -1,7 +1,4 @@
 .footer {
-  //   padding-top: 16px;
-  //   padding-bottom: 16px;
-
   .legal {
     font-size: 75%;
     margin-top: 16px;
@@ -11,20 +8,11 @@
     display: flex;
     justify-content: space-between;
 
-    //     li {
-    //       margin-right: 12px;
-
-    //       &:last-of-type {
-    //         margin-right: 0;
-    //       }
-    //     }
-
     &--link {
-      font-size: 48px;
-      color: $main-black;
-
-      @media screen and (min-width: $bp-375) {
-        font-size: 64px;
+      @media screen and (min-width: $bp-768) {
+        &.social--link {
+          font-size: 64px;
+        }
       }
     }
   }
