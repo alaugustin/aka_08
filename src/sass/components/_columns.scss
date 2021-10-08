@@ -14,57 +14,31 @@
     }
   }
 
-  &__image-offset {
-    &__r {
-      .column {
-        @media screen and (min-width: $bp-768) {
-          width: 50%;
-        }
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        @media screen and (min-width: $bp-854) {
-          width: 34%;
-
-          &:first-of-type {
-            width: 66%;
-            padding-right: 16px;
+    &-offset {
+      &__r {
+        .column {
+          @media screen and (min-width: $bp-768) {
+            width: 50%;
           }
-          &:last-of-type {
-          }
-        }
-      }
-    }
-    &__l {
-      .column {
-        @media screen and (min-width: $bp-768) {
-          width: 50%;
-        }
 
-        @media screen and (min-width: $bp-854) {
-          width: 34%;
+          @media screen and (min-width: $bp-854) {
+            width: 34%;
 
-          &:last-of-type {
-            width: 66%;
-            padding-left: 16px;
-          }
-          &:first-of-type {
+            &:first-of-type {
+              width: 66%;
+              padding-right: 16px;
+            }
+            &:last-of-type {
+            }
           }
         }
       }
-    }
-    &--img {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    &__reverse {
-      //   .column {
-      @media screen and (min-width: $bp-768) {
-        flex-direction: row-reverse;
-        //       width: 50%;
-      }
-
-      &.aka-2-col__image-offset__r {
+      &__l {
         .column {
           @media screen and (min-width: $bp-768) {
             width: 50%;
@@ -82,20 +56,32 @@
           }
         }
       }
+      // &--img {
 
-      //     @media screen and (min-width: $bp-854) {
-      //       width: 34%;
+      // }
 
-      //       &:first-of-type {
-      //
-      //         width: 66%;
-      //         padding-right: 16px;
-      //       }
-      //       &:last-of-type {
-      //
-      //       }
-      //     }
-      //   }
+      &__reverse {
+        @media screen and (min-width: $bp-768) {
+          flex-direction: row-reverse;
+        }
+
+        &.aka-2-col__image-offset__r {
+          .column {
+            @media screen and (min-width: $bp-768) {
+              width: 50%;
+            }
+
+            @media screen and (min-width: $bp-854) {
+              width: 34%;
+
+              &:last-of-type {
+                width: 66%;
+                padding-left: 16px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
