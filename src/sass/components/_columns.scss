@@ -18,10 +18,10 @@
     @media screen and (min-width: $bp-768) {
       width: 50%;
       &:first-of-type {
-        padding-right: 8px;
+        padding-right: 12px;
       }
       &:last-of-type {
-        padding-left: 8px;
+        padding-left: 12px;
       }
     }
   }
@@ -39,10 +39,10 @@
       .column {
         &:first-of-type {
           padding-right: 0;
-          padding-left: 8px;
+          padding-left: 12px;
         }
         &:last-of-type {
-          padding-right: 8px;
+          padding-right: 12px;
           padding-left: 0;
         }
       }

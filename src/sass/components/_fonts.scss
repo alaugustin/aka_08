@@ -2,6 +2,7 @@
 
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
   color: $clr-main-black;
 }
 
@@ -39,6 +40,7 @@ h3 {
 }
 
 p {
+  margin-bottom: 12px;
   line-height: 1.5;
 
   &:last-of-type {

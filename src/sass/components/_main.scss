@@ -1,6 +1,7 @@
 .main {
   > section {
     margin-top: 16px;
+    padding-bottom: 24px;
   }
 
   &--about {
@@ -13,12 +14,13 @@
   }
 
   &--gallery {
-    // background: yellow;
+    background: #fff;
   }
 
   &--represent {
     &--agent {
       font-size: 1.5rem;
+      padding-bottom: 12px;
 
       &:last-of-type {
         // margin-bottom: 16px;
