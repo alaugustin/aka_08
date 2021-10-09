@@ -49,23 +49,26 @@
     }
   }
 
-  // &__border {
-  //   .column {
-  //     @media screen and (min-width: $bp-768) {
-  //       border: 1px solid;
-  //     }
-  //     padding: 16px;
+  &__border {
+    .column {
+      @media screen and (max-width: ($bp-768)-1) {
+        border-bottom: 1px solid;
+        padding-bottom: 16px;
+        border-top: 1px solid;
+        padding-top: 16px;
+      }
 
-  //     &:first-of-type {
-  //       @media screen and (min-width: $bp-768) {
-  //         margin-right: 8px;
-  //       }
-  //     }
-  //     &:last-of-type {
-  //       @media screen and (min-width: $bp-768) {
-  //         margin-left: 8px;
-  //       }
-  //     }
-  //   }
-  // }
+      @media screen and (min-width: $bp-768) {
+        border: 1px solid;
+        padding: 16px;
+
+        &:first-of-type {
+          margin-right: 8px;
+        }
+        &:last-of-type {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
 }
