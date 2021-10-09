@@ -11,7 +11,6 @@
 
       @media (min-width: $bp-640) {
         display: flex;
-        // margin-bottom: 32px;
       }
 
       @media (min-width: $bp-768) {
@@ -29,8 +28,6 @@
 
         @media (min-width: $bp-640) {
           flex-grow: 1;
-          // margin: 0;
-          // margin-left: 32px;
         }
 
         @media (min-width: $bp-768) {
@@ -68,8 +65,6 @@
   &--social {
     display: flex;
     justify-content: space-between;
-    // padding-top: 8px;
-    // padding-bottom: 8px;
   }
 
   &--navigation {
@@ -93,20 +88,8 @@
 
   &--social {
     @media screen {
-      @media (min-width: $bp-540) {
-        // padding: 0;
-      }
-
       @media (min-width: $bp-768) {
         justify-content: flex-end;
-
-        > li {
-          // margin-right: 28px;
-
-          &:last-of-type {
-            // margin-right: 0;
-          }
-        }
       }
 
       @media (min-width: $bp-768) {
@@ -124,17 +107,12 @@
   }
 
   &--content {
-    //
-
     &--intro-copy {
       font-size: 1.33rem;
     }
   }
 
   &--headshot {
-    // margin-bottom: 16px;
-    // margin-left: auto;
-    // margin-right: auto;
     width: 100%;
     display: block;
     border-radius: 50%;
