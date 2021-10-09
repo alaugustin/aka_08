@@ -17,32 +17,35 @@
     <header id="main-header" class="header" aria-label="Main Header">
         <div class="container-fluid border-line">
 
-
             <nav class="header--nav" aria-labelledby="main-header">
-                <img src="https://via.placeholder.com/150x75.png?text=LOGO" class="header--logo"
-                    alt="Ava Augustin logo">
+                <span class="header--text-logo" aria-label="Ava Augustin logo">Ava Augustin</span>
+                <!-- <img src="https://via.placeholder.com/150x75.png?text=LOGO" class="header--logo"
+                    alt="Ava Augustin logo"> -->
 
                 <ul class="header--nav--list">
                     <li class="header--nav--list--navigation">
                         <ul class="header--navigation">
-                            <li><a href="#about" class="header--navigation--link">About</a></li>
-                            <li><a href="#gallery" class="header--navigation--link">Gallery</a></li>
-                            <li><a href="#representation" class="header--navigation--link">Representation</a></li>
+                            <li><a href="#about" class="header--navigation--link link">About</a></li>
+                            <li><a href="#gallery" class="header--navigation--link link">Gallery</a></li>
+                            <li><a href="#representation" class="header--navigation--link link">Representation</a></li>
                         </ul>
                     </li>
 
                     <li class="header--nav--list--social">
                         <ul class="header--social">
-                            <li><a href="https://www.imdb.com/name/nm4489536/" class="social--link header--social--link"
-                                    target="_blank"><span class="fab fa-imdb"></span></a>
+                            <li><a href="https://www.imdb.com/name/nm4489536/"
+                                    class="social--link header--social--link link" target="_blank"
+                                    aria-label="Ava Augustin IMDb"><span class="fab fa-imdb"></span></a>
                             </li>
                             <li><a href="https://www.instagram.com/avaaugustin/"
-                                    class="social--link header--social--link" target="_blank"><span
-                                        class="fab fa-instagram"></span></a></li>
-                            <li><a href="https://twitter.com/avaaugustin" class="social--link header--social--link"
-                                    target="_blank"><span class="fab fa-twitter"></span></a></li>
+                                    class="social--link header--social--link link" target="_blank"
+                                    aria-label="Ava Augustin Instagram"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="https://twitter.com/avaaugustin" class="social--link header--social--link link"
+                                    target="_blank" aria-label="Ava Augustin Twitter"><span
+                                        class="fab fa-twitter"></span></a></li>
                             <li><a href="https://www.facebook.com/people/Ava-Augustin/100063684993089/"
-                                    class="social--link header--social--link" target="_blank"><span
+                                    class="social--link header--social--link link" target="_blank"
+                                    aria-label="Ava Augustin Facebook fan page"><span
                                         class="fab fa-facebook-square"></span></a></li>
                         </ul>
                     </li>
@@ -50,7 +53,10 @@
             </nav>
 
             <div class="header--content">
-                <div class="aka-2-col aka-2-col__image-offset">
+                <div class="aka-2-col">
+                    <div class="column aka-2-col__image">
+                        <img src="img/7583Test.jpg" class="header--headshot" alt="Ava Augustin headshot">
+                    </div>
                     <div class="column">
                         <h1 id="sr_content">Ava Augustin</h1>
                         <p class="header--content--intro-copy">
@@ -65,15 +71,8 @@
                             print to acting in film, television and commercials.
                         </p>
                     </div>
-                    <div class="column">
-                        <img src="https://via.placeholder.com/275x275.png?text=headshot" class="header--headshot"
-                            alt="Ava Augustin headshot">
-                    </div>
                 </div>
             </div>
-        </div>
-        </div>
-
         </div>
     </header>
     <!-- /HEADER -->
@@ -84,39 +83,79 @@
             <div class="container-fluid">
                 <h2 id="about">About</h2>
 
-                <p>Ava's most recent projects include the role of 'Scout' in the hit Netflix series <a
-                        href="https://www.netflix.com/ca/title/81329721" target="_blank">Scaredy Cats</a> and ‘Young
-                    Ryan’ in <a href="https://www.imdb.com/title/tt8712204/?ref_=fn_al_tt_1" target="_blank">CW’s
-                        Batwoman</a> television series.</p>
+                <div class="aka-2-col aka-2-col__reverse">
+                    <div class="column aka-2-col__image">
+                        <img style="width:100%" src="http://avaaugustin.com/img/_MG_7871.jpg" class=""
+                            alt="Ava Augustin lorem">
+                    </div>
+                    <div class="column main--about--content">
+                        <p>Ava's most recent projects include the role of 'Scout' in the hit Netflix series <a
+                                href="https://www.netflix.com/ca/title/81329721" class="link" target="_blank">Scaredy
+                                Cats</a> and
+                            ‘Young
+                            Ryan’ in <a href="https://www.imdb.com/title/tt8712204/?ref_=fn_al_tt_1" class="link"
+                                target="_blank">CW’s
+                                Batwoman</a> television series.</p>
 
-                <p>Ava also voices the character of Tickety Tock on the live action/ animated children series <a
-                        href="https://www.imdb.com/title/tt9000424/" target="_blank">Blue’s Clues &amp; You</a>.</p>
+                        <p>Ava also voices the character of Tickety Tock on the live action/ animated children series <a
+                                href="https://www.imdb.com/title/tt9000424/" class="link" target="_blank">Blue’s Clues
+                                &amp; You</a>.
+                        </p>
 
-                <p>A few of her accomplishments in acting include winning best actress at both the <a
-                        href="https://youngentertainerawards.org/" target="_blank"> Hollywood Young Entertainer Awards
-                    </a> and the <a href="https://www.joeyawards.com/" target="_blank">Vancouver Joey Awards</a> as well
-                    as walking the red carpet for her starring role in the short film “<a
-                        href="https://torontoblackfilm.com/movie/a-rock-and-a-hard-place/" target="_blank">A Rock and a
-                        Hard Place</a>”.</p>
+                        <p>A few of her accomplishments in acting include winning best actress at both the <a
+                                href="https://youngentertainerawards.org/" class="link" target="_blank"> Hollywood Young
+                                Entertainer
+                                Awards
+                            </a> and the <a href="https://www.joeyawards.com/" class="link" target="_blank">Vancouver
+                                Joey Awards</a>
+                            as well
+                            as walking the red carpet for her starring role in the short film “<a
+                                href="https://torontoblackfilm.com/movie/a-rock-and-a-hard-place/" class="link"
+                                target="_blank">A
+                                Rock and a
+                                Hard Place</a>”.</p>
+                    </div>
+                </div>
 
-                <p>Ava is passionate about acting and is an ambassador for <a
-                        href="https://torontoblackfilm.com/serie/tbff-kids-film-festival/" target="_blank">TBFF Kids
-                        Film Festival</a>. She draws inspiration from her big sister and fellow actress <a
-                        href="https://www.imdb.com/name/nm3900747/" target="_blank">Allison Augustin</a>.</p>
-
-                <p>Ava loves spending her free time making Tik Toks with friends and family, and also competing in
-                    Provincial level gymnastics.</p>
-
+                <div class="aka-2-col aka-2-col__border">
+                    <div class="column">
+                        <p>Ava is passionate about acting and is an ambassador for <a
+                                href="https://torontoblackfilm.com/serie/tbff-kids-film-festival/" class="link"
+                                target="_blank">TBFF
+                                Kids
+                                Film Festival</a>. She draws inspiration from her big sister and fellow actress <a
+                                href="https://www.imdb.com/name/nm3900747/" class="link" target="_blank">Allison
+                                Augustin</a>.</p>
+                    </div>
+                    <div class="column">
+                        <p>Ava loves spending her free time making Tik Toks with friends and family, and also competing
+                            in
+                            Provincial level gymnastics.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="main--gallery">
             <div class="container-fluid">
                 <h2 id="gallery">Gallery</h2>
-                <img src="https://via.placeholder.com/200x100?text=GALLERY IMG 1" alt="">
-                <img src="https://via.placeholder.com/200x100?text=GALLERY IMG 2" alt="">
-                <img src="https://via.placeholder.com/200x100?text=GALLERY IMG 3" alt="">
-                <img src="https://via.placeholder.com/200x100?text=GALLERY IMG 4" alt="">
+
+                <ul class="foo">
+                    <li>
+                        <img src="http://avaaugustin.com/img/_MG_7700.jpg" alt="" loading="lazy">
+                    </li>
+                    <li>
+                        <img src="http://avaaugustin.com/img/_MG_7919.jpg" alt="" loading="lazy">
+                    </li>
+                    <li>
+                        <img src="http://avaaugustin.com/img/_MG_7581.jpg" alt="" loading="lazy">
+                    </li>
+                    <li>
+                        <img src="http://avaaugustin.com/img/_MG_7858.jpg" alt="" loading="lazy">
+                    </li>
+                    <!--  Adding an empty <li> here so the final photo doesn't stretch like crazy. Try removing it and see what happens!  -->
+                    <li></li>
+                </ul>
             </div>
         </section>
 
@@ -125,12 +164,16 @@
                 <h2 id="representation">Representation</h2>
                 <p class="main--represent--agent">Vanderwerff Talent</p>
                 <ul class="main--represent--agent--list list">
-                    <li class="main--represent--agent--list--item"><span class="fas fa-id-card"></span> Mirjam
-                        Vanderwerff</li>
+                    <li class="main--represent--agent--list--item"><span class="fas fa-id-card"></span> <a
+                            href="https://www.vanderwerfftalent.com/" class="link" target="_blank">
+                            Mirjam
+                            Vanderwerff
+                        </a></li>
                     <li class="main--represent--agent--list--item"><span class="fas fa-phone-square-alt"></span> <a
-                            href="tel:4168900905" aria-label="4 1 6.8 9 0.0 9 0 5">416.890.0905</a></li>
+                            href="tel:4168900905" aria-label="4 1 6.8 9 0.0 9 0 5" class="link">416.890.0905</a></li>
                     <li class="main--represent--agent--list--item"><i class="fas fa-at"></i> <a
-                            href="mailto:mirjam@vanderwerfftalent.com">mirjam [at] vanderwerfftalent.com</a></li>
+                            href="mailto:mirjam@vanderwerfftalent.com" class="link">mirjam [at]
+                            vanderwerfftalent.com</a></li>
                 </ul>
             </div>
         </section>
@@ -140,23 +183,23 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container-fluid aka-2-col">
-            <div class="legal column">
-                &copy; Copyright Ava Augustin 2015 - <span id="footerYear"></span>
-            </div>
-
             <div class="column">
                 <h2>Follow Me</h2>
                 <ul class="footer--social">
-                    <li><a href="https://www.imdb.com/name/nm4489536/" class="social--link footer--social--link"
+                    <li><a href="https://www.imdb.com/name/nm4489536/" class="social--link footer--social--link link"
                             aria-label="Ava Augustin IMDb"><span class="fab fa-imdb"></span></a></li>
-                    <li><a href="https://www.instagram.com/avaaugustin/" class="social--link footer--social--link"
+                    <li><a href="https://www.instagram.com/avaaugustin/" class="social--link footer--social--link link"
                             aria-label="Ava Augustin Instagram"><span class="fab fa-instagram"></span></a></li>
-                    <li><a href="https://twitter.com/avaaugustin" class="social--link footer--social--link"
+                    <li><a href="https://twitter.com/avaaugustin" class="social--link footer--social--link link"
                             aria-label="Ava Augustin Twitter"><span class="fab fa-twitter"></span></a></li>
                     <li><a href="https://www.facebook.com/people/Ava-Augustin/100063684993089/"
-                            class="social--link footer--social--link" aria-label="Ava Augustin Facebook fan page"><span
-                                class="fab fa-facebook-square"></span></a></li>
+                            class="social--link footer--social--link link"
+                            aria-label="Ava Augustin Facebook fan page"><span class="fab fa-facebook-square"></span></a>
+                    </li>
                 </ul>
+            </div>
+            <div class="legal column">
+                &copy; Copyright Ava Augustin 2015 - <span id="footerYear"></span>
             </div>
         </div>
     </footer>

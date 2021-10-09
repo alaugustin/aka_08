@@ -1,39 +1,28 @@
 .main {
-  // background: yellow;
-
   > section {
-    margin-bottom: 32px;
-  }
-
-  &--about {
-    background: yellow;
+    margin-top: 16px;
+    padding-bottom: 24px;
   }
 
   &--gallery {
-    background: yellow;
+    background: #fff;
+
+    h2 {
+      // color: $clr-teradic-green;
+    }
   }
 
   &--represent {
     &--agent {
-      font-size: 24px;
-
-      &:last-of-type {
-        margin-bottom: 16px;
-      }
+      font-size: 1.5rem;
+      padding-bottom: 12px;
 
       &--list {
         font-size: 16px;
 
-        @media screen and (min-width: $bp-375) {
-          font-size: 20px;
-        }
         @media screen and (min-width: $bp-854) {
           display: flex;
           justify-content: space-between;
-        }
-
-        &--item {
-          margin-bottom: 8px;
         }
       }
     }
