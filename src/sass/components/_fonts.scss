@@ -80,6 +80,10 @@ p {
   font-size: 48px;
   color: $clr-main-black;
 
+  &:hover {
+    color: $clr-mid-purp;
+  }
+
   @media screen {
     @media (min-width: $bp-375) {
       font-size: 64px;
