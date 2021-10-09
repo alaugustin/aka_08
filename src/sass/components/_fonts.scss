@@ -26,7 +26,7 @@ h1 {
 }
 
 h2 {
-  color: $clr-teradic-blue;
+  // color: $clr-teradic-blue;
   font-size: 32px * 0.875;
 
   @media screen and (min-width: $bp-320) {
@@ -52,7 +52,7 @@ p {
 }
 
 .link {
-  color: #264462;
+  // color: #264462;
   text-decoration: none;
   white-space: nowrap;
   transition: color 0.15s ease-in;
