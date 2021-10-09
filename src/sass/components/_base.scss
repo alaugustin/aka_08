@@ -18,10 +18,10 @@ img {
 }
 
 .container-fluid {
-  margin: 0 auto 16px;
+  // margin: 0 auto 16px;
   max-width: 1100px;
 
   @media screen and (max-width: 1099px) {
-    margin: 0 32px 16px;
+    // margin: 0 32px 16px;
   }
 }

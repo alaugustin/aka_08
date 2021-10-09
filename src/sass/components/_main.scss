@@ -1,6 +1,6 @@
 .main {
   > section {
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
   }
 
   &--about {
@@ -21,7 +21,7 @@
       font-size: 24px;
 
       &:last-of-type {
-        margin-bottom: 16px;
+        // margin-bottom: 16px;
       }
 
       &--list {
@@ -36,7 +36,7 @@
         }
 
         &--item {
-          margin-bottom: 8px;
+          // margin-bottom: 8px;
         }
       }
     }
