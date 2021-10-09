@@ -2,8 +2,7 @@
 
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  color: $main-black;
+  color: $clr-main-black;
 }
 
 h1,
@@ -49,7 +48,7 @@ p {
 
 .social--link {
   font-size: 48px;
-  color: $main-black;
+  color: $clr-main-black;
 
   @media screen {
     @media (min-width: $bp-375) {
