@@ -1,4 +1,9 @@
 .header {
+  &--text-logo {
+    font-size: 3rem;
+    font-family: "Shadows Into Light Two", cursive;
+  }
+
   h1 {
     color: $clr-mid-purp;
   }
