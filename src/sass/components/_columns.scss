@@ -52,14 +52,14 @@
   &__border {
     .column {
       @media screen and (max-width: ($bp-768)-1) {
-        border-bottom: 1px solid;
+        border-bottom: 1px solid $clr-ava-purple-drk;
         padding-bottom: 16px;
         border-top: 1px solid;
         padding-top: 16px;
       }
 
       @media screen and (min-width: $bp-768) {
-        border: 1px solid;
+        border: 1px solid $clr-ava-purple-drk;
         padding: 16px;
 
         &:first-of-type {
