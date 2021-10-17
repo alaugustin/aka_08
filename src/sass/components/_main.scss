@@ -22,7 +22,14 @@
         }
       }
     }
+
+    &--demo-reel {
+      .cntr-txt {
+        // background: red;
+        font-weight: 700;
         color: darken($clr-ava-purple-comp1, 62.5%);
+      }
+    }
   }
 
   &--represent {

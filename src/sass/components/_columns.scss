@@ -24,6 +24,12 @@
         padding-left: 12px;
       }
     }
+
+    &.cntr-txt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__image {
