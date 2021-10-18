@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Shadows+Into+Light+Two&display=swap");
 
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: $main-black;
+  color: $clr-main-black;
 }
 
 h1,
@@ -14,32 +14,78 @@ h5,
 h6 {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 h1 {
-  font-size: 48px;
-  margin-bottom: 16px;
+  font-size: 48px * 0.75;
+
+  @media screen and (min-width: $bp-375) {
+    font-size: 48px;
+  }
 }
+
 h2 {
-  font-size: 32px;
+  // color: $clr-teradic-blue;
+  font-size: 32px * 0.875;
+
+  @media screen and (min-width: $bp-320) {
+    font-size: 32px;
+  }
 }
+
 h3 {
-  font-size: 24px;
+  font-size: 24px * 0.875;
+
+  @media screen and (min-width: $bp-320) {
+    font-size: 24px;
+  }
 }
 
 p {
-  margin-bottom: 8px;
-  line-height: 140%;
+  margin-bottom: 12px;
+  line-height: 1.5;
 
   &:last-of-type {
     margin-bottom: 0;
   }
 }
 
+.link {
+  // color: #264462;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.15s ease-in;
+  position: relative;
+  font-weight: 700;
+
+  &:after {
+    height: 2px;
+    display: block;
+    content: "";
+    background-color: transparent;
+    transition: width 0.5s ease, background-color 0.5s ease;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -4px;
+  }
+
+  &:active,
+  &:hover {
+    &:after {
+      background-color: $clr-mid-purp;
+    }
+  }
+}
+
 .social--link {
   font-size: 48px;
-  color: $main-black;
+  color: $clr-main-black;
+
+  &:hover {
+    color: $clr-mid-purp;
+  }
 
   @media screen {
     @media (min-width: $bp-375) {

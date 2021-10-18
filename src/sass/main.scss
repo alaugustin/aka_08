@@ -1,6 +1,7 @@
 @import "components/var";
-@import "components/reset";
-@import "components/screen_reader";
+@import "components/lib/reset";
+@import "components/lib/image_gallery";
+@import "components/lib/screen_reader";
 @import "components/columns";
 @import "components/base";
 @import "components/fonts";
@@ -11,6 +12,10 @@
 .header,
 .main,
 .footer {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 48px;
+}
+
+.header,
+.footer {
+  background: $clr-clare-white;
 }

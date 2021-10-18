@@ -1,7 +1,9 @@
 .footer {
+  h2 {
+    // color: $clr-teradic-green;
+  }
   .legal {
     font-size: 75%;
-    margin-top: 16px;
   }
 
   &--social {
@@ -9,7 +11,7 @@
     justify-content: space-between;
 
     &--link {
-      @media screen and (min-width: $bp-768) {
+      @media screen and (min-width: $bp-640) {
         &.social--link {
           font-size: 64px;
         }
