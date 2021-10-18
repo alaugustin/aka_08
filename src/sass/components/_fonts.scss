@@ -52,11 +52,16 @@ p {
 
 .link {
   color: $clr-ava-purple-drk;
-  text-decoration: none;
-  white-space: nowrap;
   transition: color 0.15s ease-in;
   position: relative;
   font-weight: 700;
+  @media (max-width: ($bp-768)-1) {
+    text-decoration: underline;
+  }
+  @media (min-width: $bp-768) {
+    text-decoration: none;
+    white-space: nowrap;
+  }
 
   &:after {
     height: 2px;

@@ -3,7 +3,7 @@
     font-size: 75%;
 
     @media screen and (max-width: ($bp-768)-1) {
-      padding-top: 8px;
+      padding-top: 16px;
     }
     @media screen and (min-width: $bp-768) {
       display: flex;

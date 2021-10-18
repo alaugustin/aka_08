@@ -8,6 +8,29 @@
     }
   }
 
+  &--about {
+    .aka-2-col {
+      &__image {
+        img {
+          border-top-right-radius: 8px;
+        }
+      }
+
+      &__border {
+        .column {
+          @media (min-width: $bp-768) {
+            &:first-of-type {
+              border-bottom-left-radius: 8px;
+            }
+            &:last-of-type {
+              border-bottom-right-radius: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
   &--gallery {
     background: #fff;
 
@@ -31,6 +54,8 @@
         color: darken($clr-ava-purple-comp1, 62.5%);
         @media screen and (max-width: ($bp-768)-1) {
           padding-top: 8px;
+          border-bottom: 1px solid currentColor;
+          padding-bottom: 8px;
         }
       }
     }
