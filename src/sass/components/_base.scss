@@ -13,6 +13,12 @@ body {
   height: 100vh;
 }
 
+#sr_content {
+  @media screen and (max-width: ($bp-768)-1) {
+    margin-top: 24px;
+  }
+}
+
 img {
   width: 100%;
 

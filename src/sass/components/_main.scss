@@ -2,13 +2,17 @@
   > section {
     margin-top: 16px;
     padding-bottom: 24px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
   }
 
   &--gallery {
     background: #fff;
 
-    h2 {
-      // color: $clr-teradic-green;
+    h3 {
+      padding-top: 16px;
     }
 
     &--presslist {
@@ -23,9 +27,11 @@
 
     &--demo-reel {
       .cntr-txt {
-        // background: red;
         font-weight: 700;
         color: darken($clr-ava-purple-comp1, 62.5%);
+        @media screen and (max-width: ($bp-768)-1) {
+          padding-top: 8px;
+        }
       }
     }
   }
@@ -44,8 +50,16 @@
         }
 
         &--item {
+          @media screen and (max-width: ($bp-854)-1) {
+            margin-bottom: 12px;
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+
           .fas {
-            color: darken($clr-ava-purple-drk, 6.25%);
+            color: $clr-ava-purple-blk;
           }
         }
       }
