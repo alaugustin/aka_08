@@ -2,13 +2,37 @@
   > section {
     margin-top: 16px;
     padding-bottom: 24px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
   }
 
   &--gallery {
     background: #fff;
 
-    h2 {
-      // color: $clr-teradic-green;
+    h3 {
+      padding-top: 16px;
+    }
+
+    &--presslist {
+      li {
+        margin-bottom: 16px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &--demo-reel {
+      .cntr-txt {
+        font-weight: 700;
+        color: darken($clr-ava-purple-comp1, 62.5%);
+        @media screen and (max-width: ($bp-768)-1) {
+          padding-top: 8px;
+        }
+      }
     }
   }
 
@@ -23,6 +47,20 @@
         @media screen and (min-width: $bp-854) {
           display: flex;
           justify-content: space-between;
+        }
+
+        &--item {
+          @media screen and (max-width: ($bp-854)-1) {
+            margin-bottom: 12px;
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+
+          .fas {
+            color: $clr-ava-purple-blk;
+          }
         }
       }
     }

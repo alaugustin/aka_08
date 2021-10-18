@@ -3,7 +3,7 @@
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: $clr-main-black;
+  color: $clr-ava-purple-blk;
 }
 
 h1,
@@ -26,7 +26,6 @@ h1 {
 }
 
 h2 {
-  // color: $clr-teradic-blue;
   font-size: 32px * 0.875;
 
   @media screen and (min-width: $bp-320) {
@@ -52,7 +51,7 @@ p {
 }
 
 .link {
-  // color: #264462;
+  color: $clr-ava-purple-drk;
   text-decoration: none;
   white-space: nowrap;
   transition: color 0.15s ease-in;
@@ -74,17 +73,17 @@ p {
   &:active,
   &:hover {
     &:after {
-      background-color: $clr-mid-purp;
+      background-color: $clr-ava-purple-drk;
     }
   }
 }
 
 .social--link {
   font-size: 48px;
-  color: $clr-main-black;
+  color: lighten($clr-ava-purple-blk, 12.5%);
 
   &:hover {
-    color: $clr-mid-purp;
+    color: darken($clr-teradic-blue, 25%);
   }
 
   @media screen {

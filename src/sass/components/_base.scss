@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background: $clr-light-ava-purple;
+  background: lighten($clr-ava-purple, 7.5%);
 }
 
 html {
@@ -11,6 +11,12 @@ html {
 
 body {
   height: 100vh;
+}
+
+#sr_content {
+  @media screen and (max-width: ($bp-768)-1) {
+    margin-top: 24px;
+  }
 }
 
 img {
