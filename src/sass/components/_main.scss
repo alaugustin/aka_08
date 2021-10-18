@@ -18,11 +18,13 @@
 
       &__border {
         .column {
-          &:first-of-type {
-            border-bottom-left-radius: 8px;
-          }
-          &:last-of-type {
-            border-bottom-right-radius: 8px;
+          @media (min-width: $bp-768) {
+            &:first-of-type {
+              border-bottom-left-radius: 8px;
+            }
+            &:last-of-type {
+              border-bottom-right-radius: 8px;
+            }
           }
         }
       }
@@ -52,6 +54,8 @@
         color: darken($clr-ava-purple-comp1, 62.5%);
         @media screen and (max-width: ($bp-768)-1) {
           padding-top: 8px;
+          border-bottom: 1px solid currentColor;
+          padding-bottom: 8px;
         }
       }
     }
