@@ -50,6 +50,9 @@ p {
   }
 }
 
+em {
+  font-style: italic;
+}
 .link {
   color: $clr-ava-purple-drk;
   transition: color 0.15s ease-in;
